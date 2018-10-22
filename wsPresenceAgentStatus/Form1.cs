@@ -76,12 +76,12 @@ namespace wsPresenceAgentStatus
 
                 this.axPresenceInterfaceX1.Active();
                 this.axPresenceInterfaceX1.ConnectToAllServices();
-                this.axPresenceInterfaceX1.LoginAgent("111416", "");
+                this.axPresenceInterfaceX1.LoginAgent("112188", "");
 
                 //Wait for ActiveX to load
                 System.Threading.Thread.Sleep(30000);
 
-                using (SqlConnection oCn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["SQLDRS"].ConnectionString))
+                using (SqlConnection oCn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["FDLAXSQLBI01"].ConnectionString))
                 {
                     if (oCn.State != ConnectionState.Open)
                     {
